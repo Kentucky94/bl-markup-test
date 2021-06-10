@@ -27,7 +27,6 @@
 }
 
 .footer_social {
-    /*max-width: 400px;*/
     width: 21.4%;
     display: flex;
     justify-content: space-between;

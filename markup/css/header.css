@@ -62,8 +62,6 @@
     color: white;
 }
 
-/*main-menu*/
-
 .main-menu {
     padding: 16px 0;
     display: flex;
@@ -137,7 +135,6 @@
     font-size: 14px;
     width: 97px;
     border-radius: 9px;
-    /*padding: 10px 24px 10px 24px;*/
     text-align: center;
     line-height: 47px;
     background: #FFCD00;
