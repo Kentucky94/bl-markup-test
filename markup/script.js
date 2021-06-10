@@ -1,13 +1,17 @@
 const btn = document.getElementById("mobile-menu-button");
+const closeMenuBtn = document.getElementById('mobile-menu_button-close');
+const menu = document.getElementById("mobile-menu");
 
 btn.onclick = function () {
-    const menu = document.getElementById("mobile-menu");
-
     if (menu.classList.contains("open")) {
         menu.classList.remove("open")
     } else {
         menu.classList.add("open")
     }
+};
+
+closeMenuBtn.onclick = function () {
+    menu.classList.remove("open")
 };
 
 const cardButtons = document.getElementsByClassName("options-block_cards-select-button");
