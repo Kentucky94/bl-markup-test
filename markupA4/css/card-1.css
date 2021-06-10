@@ -1,0 +1,278 @@
+.card-1 .card-col-1, .card-1 .card-col-3 {
+    background: linear-gradient(342.77deg, #F8104D 6.15%, rgba(26, 20, 59, 0) 76.19%);
+}
+
+.card-1 .card-col-1 {
+    width: 32.7%;
+}
+
+.card-1 .card-col-2 {
+    width: 33.6%;
+}
+
+.card-1 .card-col-3 {
+    width: 33.7%;
+    padding-left: 29px;
+    padding-right: 27px;
+}
+
+.card-1 .card-col-1 .card-heading {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 11px;
+}
+
+.card-1 .card-col-1 .content-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-grow: 1;
+}
+
+.card-1 .card-col-1 .content-list-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 15px 0 14px;
+}
+
+.card-1 .card-col-1 .content-list-item-text {
+    display: inline-block;
+    flex-grow: 1;
+    vertical-align: middle;
+}
+
+.card-1 .card-col-1 .content-list-item::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right: 13px;
+    margin-bottom: 1px;
+}
+
+.card-1 .card-col-1 .content-list-item--gifts::before {
+    background-image: url("../assets/icons/white-outline-icons/present.png");
+}
+
+.card-1 .card-col-1 .content-list-item--rewards::before {
+    background-image: url("../assets/icons/white-outline-icons/medal.png");
+}
+
+.card-1 .card-col-1 .content-list-item--sale::before {
+    background-image: url("../assets/icons/white-outline-icons/percent.png");
+}
+
+.card-1 .card-col-1 .content-list-item--simple::before {
+    background-image: url("../assets/icons/white-outline-icons/phone.png");
+}
+
+.card-1 .card-col-1 .content-list-item--help::before {
+    background-image: url("../assets/icons/white-outline-icons/help.png");
+}
+
+.card-1 .card-col-1 .info {
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.card-1 .card-col-2 .card-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 0 18px 0;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 0 6px;
+    width: 85%;
+    margin-bottom: 23px;
+}
+
+.card-1 .card-col-2 .card-top-image {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.card-1 .card-col-2 .card-data {
+    display: inline-block;
+}
+
+.card-1 .card-col-2 .card-top-data-heading {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-1 .card-col-2 .card-top-data-text {
+    color: #E8E8E8;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.card-1 .card-col-2 .card-top-data-price {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    word-spacing: 1px;
+}
+
+.card-1 .card-col-2 .list {
+    font-size: 12px;
+    line-height: 17px;
+    padding-left: 6px;
+    flex-grow: 1;
+}
+
+.card-1 .card-col-2 .list-item {
+    margin-bottom: 7px;
+    position: relative;
+}
+
+.card-1 .card-col-2 .list-item::before {
+    content: "•";
+    position: absolute;
+    left: -12px;
+    top: 0;
+}
+
+.card-1 .card-col-2 .text-block {
+    padding-left: 5px;
+}
+
+.card-1 .card-col-2 .text {
+    font-size: 8px;
+    line-height: 12px;
+}
+
+.card-1 .card-col-2 .text--narrow {
+    max-width: 150px;
+    margin-bottom: 9px;
+}
+
+.card-1 .card-col-2 .text--asterisk {
+    position: relative;
+    padding: 0 3px 3px 0;
+    width: 99%;
+}
+
+.card-1 .card-col-2 .text--asterisk::before {
+    content: "\002A";
+    left: -9px;
+    top: 2px;
+    position: absolute;
+}
+
+.card-1 .card-col-3 .card-top-heading {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.card-1 .card-col-3 .card-top .red {
+    color: #FF2360;
+}
+
+.card-1 .card-col-3 .card-top-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.card-1 .card-col-3 .popcorn-image-block {
+    flex-grow: 1;
+    position: relative;
+}
+
+.card-1 .card-col-3 .popcorn-image {
+    background: url("../assets/images/popcorn.png") no-repeat 100% 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    transform: translate(5.6%, -20.4%);
+}
+
+.card-1 .card-col-3 .card-bottom .card-bottom-text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.card-1 .card-col-3 .card-bottom {
+    height: 101px;
+}
+
+.card-1 .card-col-3 .card-bottom .links {
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 0 12px;
+}
+
+.card-1 .card-col-3 .card-bottom .link {
+    height: 29px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 5px;
+}
+
+.card-1 .card-col-3 .card-bottom .link-social {
+    padding-top: 4px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    width: 90px;
+    background-position: 8px 50%;
+    font-size: 7px;
+    line-height: 8px;
+}
+.card-1 .card-col-3 .card-bottom .link-social .store-name {
+    font-size: 9px;
+    line-height: 12px;
+    font-weight: 500;
+}
+
+.card-1 .card-col-3 .card-bottom .link--beeline {
+    width: 29px;
+    background: white url("../assets/icons/beeline.png") no-repeat 50% 50%;
+}
+
+.card-1 .card-col-3 .card-bottom .link-social--google {
+    background-image: url("../assets/icons/google-play.png");
+}
+
+.card-1 .card-col-3 .card-bottom .link-social--apple {
+    background-image: url("../assets/icons/app-store.png");
+}
+
+.card-1 .card-col-3 .card-bottom .asterisk {
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.card-1--kg .card-col-1 .card-heading {
+    margin-bottom: 7px;
+}
+
+.card-1 .card-col-2 .text--narrow {
+    max-width: 142px;
+}
+
+.card-1--kg .card-col-3 .card-top-heading {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.card-1--kg .card-col-3 .card-top-text {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.card-1--kg .card-col-3 .popcorn-image {
+    background-position: 104% 35%;
+}
+
+

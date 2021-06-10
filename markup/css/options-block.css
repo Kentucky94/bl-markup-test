@@ -1,0 +1,311 @@
+.options-block {
+    /*width: 65.6%;*/
+    max-width: 780px;
+    margin: 0 auto;
+    margin-top: 43px;
+    font-size: 16px;
+}
+
+.options-block_heading {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    font-weight: 600;
+    padding: 0 60px 0 45px;
+}
+
+.options-block_heading_asterisk {
+    position: relative;
+}
+
+.options-block_heading_asterisk::after {
+    content: '\002A';
+    position: absolute;
+    top: -12px;
+    right: -8px;
+    font-size: 20px
+}
+
+.options-block_heading br{
+    display: none;
+}
+
+.options-block_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 34px;
+    margin-right: 4px;
+    transition: 0.5s linear;
+    position: relative;
+}
+
+.options-block_card {
+    background: #211943;
+    border-radius: 16px;
+    padding: 16px 28px 9px 25px;
+    box-sizing: border-box;
+    width: 48.5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.options-block_card:hover {
+    background: #281F55;
+}
+
+.options-block_card-wrapper {
+    flex-grow: 1;
+}
+
+.options-block_card_head {
+    border-bottom: 1px solid #3C2F78;
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+    height: 88px;
+}
+
+.options-block_card_head_image {
+    width: 68px;
+    height: 68px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.options-block_card_head_data {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+
+.options-block_card_head_data_heading {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.options-block_card_head_data_text {
+    font-size: 14px;
+}
+
+.options-block_card-explanation {
+    position: relative;
+}
+
+.options-block_card-explanation-link {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    display: inline-block;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.2);
+    top: -2px;
+    right: -19px;
+    width: 13px;
+    height: 13px;
+    font-size: 9px;
+}
+
+.options-block_card_head_data_text-price {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.options-block_card_head_data_text-currency {
+    text-decoration: underline;
+}
+
+.options-block_card-body {
+    margin-top: 28px;
+    flex-grow: 1;
+}
+
+.options-block_card-body_heading {
+    font-size: 16px;
+    line-height: 23px;
+    color: #EA003D;
+}
+
+.options-block_card-body_list {
+    list-style: none;
+    margin-top: 11px;
+}
+
+.options-block_card-body_list-item {
+    display: block;
+    line-height: 24px;
+    padding: 9px 0 8px;
+}
+
+.options-block_card-body_list-item span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.options-block_card-social-links {
+    display: inline-block;
+    margin-left: 9px;
+}
+
+.options-block_card-social-link {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+.options-block_card-link-ivi {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    vertical-align: text-top;
+    background: url("../assets/icons/ivi.png") no-repeat 2px -1px;
+}
+
+span.options-block_card-link-ivi--mobile {
+    display: none;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+}
+
+.options-block_card-link-ivi--mobile a {
+    display: inline-block;
+    background: url("../assets/icons/ivi-solid.png");
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: -40px;
+    top: -4px;
+}
+
+.options-block_card-social-link--insta {
+    background: url('../assets/icons/social-icons/instagram.png') no-repeat 50% 50%;
+}
+
+.options-block_card-social-link--whats {
+    background: url('../assets/icons/social-icons/whatsapp.png') no-repeat 50% 50%;
+}
+
+.options-block_card-social-link--tlgrm {
+    background: url('../assets/icons/social-icons/telegram.png') no-repeat 50% 50%;
+}
+
+.options-block_card_buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.options-block_card_button {
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #121212;
+    border: none;
+    padding: 18px 0;
+    margin-bottom: 3px;
+}
+
+.options-block_card_button--primary {
+    background: #FFCD00;
+}
+
+.options-block_card_button--secondary {
+    background: transparent;
+    color: #6C60A9;
+    font-weight: normal;
+    font-size: 16px
+}
+
+.options-block_card:last-child {
+    padding: 21px 27px 35px 26px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.options-block_card:last-child .options-block_card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3C2F78;
+    padding-bottom: 15px;
+}
+
+.options-block_card:last-child .options-block_card_head {
+    border-bottom: none;
+    width: 40%
+}
+
+.options-block_card:last-child .options-block_card-body {
+    margin: 0;
+    width: 44.9%;
+    flex-grow: 0;
+    padding-top: 5px;
+}
+
+.options-block_card:last-child .options-block_card_head_image {
+    margin-right: 18px;
+}
+
+.options-block_card:last-child .options-block_card-body_list {
+    margin-top: 5px;
+}
+
+.options-block_card:last-child .options-block_card_buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.options-block_card:last-child .options-block_card_button {
+    width: 44.6%;
+}
+
+.options-block_card:last-child .options-block_card_button--primary {
+    order: 2;
+}
+
+.options-block_card:last-child .options-block_card_button--secondary {
+    order: 1;
+}
+
+.options-block_cards-select-buttons {
+    display: none;
+    height: 60px;
+    margin-bottom: 21px;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-block_cards-select-button {
+    border: none;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #6C60A9;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.options-block_cards-select-button.active {
+    background: #FFCD00;
+    width: 12px;
+    height: 12px;
+}
+
+
+
+
+
+
+

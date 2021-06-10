@@ -1,0 +1,271 @@
+.app-block {
+    padding-top: 74px;
+    /*min-height: 700px;*/
+    position: relative;
+}
+
+.app-block_blur {
+    display: block;
+    background: linear-gradient(180deg, #6C60A9 0%, #F8104D 100%);
+    filter: blur(200px);
+    border-radius: 56px;
+    transform: rotate(30deg);
+    width: 285px;
+    height: 470px;
+    position: absolute;
+    left: 200px;
+    z-index: -10;
+}
+
+.app-block_content {
+    max-width: 920px;
+    margin: 0 auto;
+
+}
+
+.app-block_content-phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-block_content-phone-imageBlock {
+    width: 45.7%;
+}
+
+.app-block_content-phone-image {
+    display: inline-block;
+    width: 276px;
+    height: 560px;
+    background: url('../assets/images/iPhone X -yellow.png') no-repeat center top;
+    position: relative;
+    padding-left: 6px;
+}
+
+.app-block_content-phone-image--small {
+    display: none;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    position: static;
+    background-size: 110% auto;
+}
+
+.app-block_content-phone-image::after {
+    content: "";
+    display: inline-block;
+    width: 152px;
+    height: 82px;
+    background: url("../assets/images/yellow-line.png") no-repeat center center;
+    position: absolute;
+    bottom: 94px;
+    right: -116px;
+}
+
+.app-block_content-phone-image--small::after {
+    display: none;
+}
+
+.app-block_content-phone-downloadBlock {
+    width: 54.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-block_content-phone-heading {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    margin: 14px 0;
+}
+
+.app-block_content-phone-body {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 72px;
+}
+
+.app-block_content-phone-text {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 2px 0;
+}
+
+.app-block_download-phone-buttons {
+    margin: 38px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.app-block_download-phone-button {
+    display: inline-block;
+    width: 161px;
+    height: 52px;
+    background-position: 17px center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 16px;
+    font-size: 12px;
+}
+
+.app-block_download-phone-button-storeName {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.app-block_download-phone-button--google {
+    background-image: url("../assets/icons/google-play.png");
+    border: 1px solid #E8E8E8;
+    padding: 7px 0 10px 54px;
+}
+
+.app-block_download-phone-button--apple {
+    background-image: url("../assets/icons/app-store.png");
+    border: none;
+    padding: 9px 0 8px 52px;
+    background-color: #FFCD00;
+    color: #232325;
+    position: relative;
+}
+
+.app-block_download-phone-button--apple::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: -22px;
+    width: 20px;
+    height: 30px;
+    background: url("../assets/icons/hand.png") no-repeat center center;
+}
+
+.app-block_content-phone-line {
+    height: 1px;
+    max-width: 230px;
+    background: rgba(232, 232, 232, 0.2);
+    margin: auto 0 auto 1px;
+}
+
+.app-block_content-phone-clarification {
+    display: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.app-block_content-phone-clarification-link {
+    text-decoration: underline;
+}
+
+.app-block_download-phone-button-connect {
+    background: #FF0F52;
+    border-radius: 16px;
+    height: 72px;
+    max-width: 413px;
+    display: inline-block;
+    line-height: 72px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+.app-block_download-phone-button-connect::after {
+    content: "";
+    display: inline-block;
+    background-color: rgba(18, 18, 18, 0.2);
+    background-image: url(../assets/icons/play.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-left: 11px;
+    vertical-align: middle;
+}
+
+.app-block_content-list {
+    margin: 52px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.app-block_content-list-item {
+    display: inline-block;
+    padding: 25px 12px 25px 5px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.app-block_content-list-item:last-child {
+    margin-right: auto;
+    margin-left: 44px;
+}
+
+.app-block_content-list-item-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.app-block_content-list-item::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 19px;
+    margin-bottom: 4px;
+}
+
+.app-block_content-list-item--gifts::before {
+    background-image: url("../assets/icons/white-outline-icons/present.png");
+}
+
+.app-block_content-list-item--rewards::before {
+    background-image: url("../assets/icons/white-outline-icons/medal.png");
+}
+
+.app-block_content-list-item--sale::before {
+    background-image: url("../assets/icons/white-outline-icons/percent.png");
+}
+
+.app-block_content-list-item--simple::before {
+    background-image: url("../assets/icons/white-outline-icons/phone.png");
+}
+
+.app-block_content-list-item--help::before {
+    background-image: url("../assets/icons/white-outline-icons/help.png");
+}
+
+.app-block_content-clarification {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 27px;
+    margin: 117px 0 0 8px;
+    position: relative;
+}
+
+.app-block_content-clarification-text-mobile {
+    display: none;
+}
+
+.app-block_content-clarification::before {
+    content: "\002A";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.app-block_content-clarification-link {
+    text-decoration: underline;
+}
+
+
+
+
+
+

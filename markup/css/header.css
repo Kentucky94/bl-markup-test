@@ -1,0 +1,144 @@
+.header {
+    font-size: 14px;
+}
+
+.top-menu {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.link-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.top-menu__link-list {
+    width: 50.1%;
+}
+
+.selector-block {
+    width: 23.8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switchSelector {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.switchSelector__item:after {
+    content: "/";
+    color: lightgrey;
+    padding: 0 3px 0 4px;
+}
+
+.switchSelector__item:last-child:after {
+    content: "";
+}
+
+.switchSelector__item button {
+    background: transparent;
+    color: lightgrey;
+    border: none;
+}
+
+.switchSelector__item button:hover {
+    text-decoration: underline;
+}
+
+.switchSelector__item button:focus {
+    outline: none;
+}
+
+.switchSelector__item.active button {
+    color: white;
+}
+
+/*main-menu*/
+
+.main-menu {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.main-menu_burger-button {
+    display: none;
+    position: relative;
+    height: 14px;
+    width: 19px;
+    background: transparent;
+    border: none;
+    margin-left: 3px;
+}
+
+.main-menu_burger-button:focus {
+    outline: none;
+}
+
+.main-menu_burger-button span {
+    display: inline-block;
+    position: absolute;
+    width: 19px;
+    top: 6px;
+    left: 0;
+    background: white;
+    height: 2px;
+}
+
+.main-menu_burger-button::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 19px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+}
+
+.main-menu_burger-button::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 19px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: white;
+}
+
+.main-logo {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../assets/icons/main-logo.png);
+}
+
+.main-menu__link-list {
+    margin: 0 auto 0 39px;
+    width: 53.7%;
+}
+
+.main-menu__button {
+    margin-right: 6px;
+    height: 47px;
+    font-weight: 600;
+    font-size: 14px;
+    width: 97px;
+    border-radius: 9px;
+    /*padding: 10px 24px 10px 24px;*/
+    text-align: center;
+    line-height: 47px;
+    background: #FFCD00;
+}

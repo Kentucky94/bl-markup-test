@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/mobile-menu.css">
+    <link rel="stylesheet" href="./css/promo-block.css">
+    <link rel="stylesheet" href="./css/options-block.css">
+    <link rel="stylesheet" href="./css/app-block.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media/header-media.css">
+    <link rel="stylesheet" href="./css/media/promo-block-media.css">
+    <link rel="stylesheet" href="./css/media/options-block-media.css">
+    <link rel="stylesheet" href="./css/media/app-block-media.css">
+    <link rel="stylesheet" href="./css/media/style-media.css">
+    <link rel="stylesheet" href="./css/media/footer-media.css">
+</head>
+<body>
+<div class="gradient-wrapper">
+    <header class="header">
+        <div class="top-menu-wrapper">
+            <div class="container">
+                <div class="top-menu">
+                    <ul class="link-list top-menu__link-list">
+                        <li class="link-list-item top-menu__link-list-item"><a href="#">Помощь</a></li>
+                        <li class="link-list-item top-menu__link-list-item"><a href="#">О компании</a></li>
+                        <li class="link-list-item top-menu__link-list-item"><a href="#">Карта офисов</a></li>
+                        <li class="link-list-item top-menu__link-list-item"><a href="#">Акции и новости</a></li>
+                        <li class="link-list-item top-menu__link-list-item"><a href="#">Beeline Рахмат</a></li>
+                    </ul>
+
+                    <div class="selector-block">
+                        <ul class="switchSelector top-menu__language-list">
+                            <li class="switchSelector__item top-menu__language-list-item active">
+                                <button>Рус</button>
+                            </li>
+                            <li class="switchSelector__item top-menu__language-list-item">
+                                <button>Кыр</button>
+                            </li>
+                        </ul>
+
+                        <ul class="switchSelector top-menu__client-list">
+                            <li class="switchSelector__item top-menu__client-list-item active">
+                                <button>Частным лицам</button>
+                            </li>
+                            <li class="switchSelector__item top-menu__client-list-item">
+                                <button>Бизнесу</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-menu">
+                <div class="main-menu_wrapper main-menu_wrapper-left">
+                    <button id="mobile-menu-button" class="main-menu_burger-button">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-menu_wrapper main-menu_wrapper-center">
+                    <a class="main-logo" href="#"></a>
+                </div>
+
+                <ul class="link-list main-menu__link-list">
+                    <li class="link-list-item main-menu__link-list-item"><a href="#">Перейти в Билайн</a></li>
+                    <li class="link-list-item main-menu__link-list-item"><a href="#">Тарифы</a></li>
+                    <li class="link-list-item main-menu__link-list-item"><a href="#">Услуги</a></li>
+                    <li class="link-list-item main-menu__link-list-item"><a href="#">Пополнить баланс</a></li>
+                    <li class="link-list-item main-menu__link-list-item"><a href="#">Приложения</a></li>
+                    <li class="link-list-item main-menu__link-list-item"><a href="#">Еще</a></li>
+                </ul>
+
+                <div class="main-menu_wrapper main-menu_wrapper-right">
+                    <button class="main-menu__button">Войти</button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu">
+                <div class="mobile-menu_top">
+                    <button class="mobile-menu_button-close"></button>
+
+                    <ul class="mobile-menu_language-list">
+                        <li class="mobile-menu_language-list-item active">
+                            <button>Рус</button>
+                        </li>
+                        <li class="mobile-menu_language-list-item">
+                            <button>Кыр</button>
+                        </li>
+                    </ul>
+
+                    <a class="mobile-menu_avatar" href="#"></a>
+                </div>
+
+                <div class="mobile-menu_body">
+                    <ul class="mobile-menu_client-list">
+                        <li class="mobile-menu_client-list-item active">
+                            <button>Частным клиентам</button>
+                        </li>
+                        <li class="mobile-menu_client-list-item">
+                            <button>Бизнесу</button>
+                        </li>
+                    </ul>
+
+                    <div class="mobile-menu_lists">
+                        <ul class="mobile-menu_list mobile-menu_list--private">
+                            <li class="mobile-menu_list-item">
+                                <a href="#">Перейти в Beeline</a>
+                            </li>
+                            <li class="mobile-menu_list-item mobile-menu_list-item--droppable">
+                                <a href="#">Тарифы</a>
+                            </li>
+                            <li class="mobile-menu_list-item mobile-menu_list-item--droppable">
+                                <a href="#">Услуги и пакеты</a>
+                            </li>
+                            <li class="mobile-menu_list-item">
+                                <a href="#">Пополнить баланс</a>
+                            </li>
+                            <li class="mobile-menu_list-item mobile-menu_list-item--droppable">
+                                <a href="#">Приложения</a>
+                            </li>
+                            <li class="mobile-menu_list-item mobile-menu_list-item--droppable">
+                                <a href="#">Еще</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-menu_bottom">
+                    <a href="#" class="mobile-menu_bottom-link">Нужна помощь?</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="promo-block">
+                <div class="promo-block_left">
+                    <h1 class="promo-block_heading">Онлайн-кинотеатр IVI</h1>
+                    <div class="promo-block_text-block">
+                        <p class="promo-block_text-line promo-block_text-line--upper">
+                            Более 100 000 фильмов и
+                            <span class="promo-block_text-linked">
+                            сериалов
+                            <a class="promo-block_text-line-link" href="#">единиц контента</a>
+                            <a class="promo-block_text-line-link promo-block_text-line-link-mobile" href="#">?</a>
+                        </span>
+                        </p>
+                        <p class="promo-block_text-line promo-block_text-line--lower">
+                            с бесплатным трафиком на 5-ти
+                            <span class="promo-block_text-linked">
+                            устройствах
+                            <a class="promo-block_text-line-link" href="#">?</a>
+                        </span>
+                        </p>
+                    </div>
+                    <div class="promo-block_button-block">
+                        <a class="promo-block_button promo-block_button-free" href="#">Бесплатно на 14 дней</a>
+                        <a class="promo-block_button promo-block_button-how-to" href="#">Как подключить?</a>
+                    </div>
+                </div>
+                <div class="promo-block_right">
+                    <div class="promo-block_blur"></div>
+                    <div class="popcorn-image-block"></div>
+                    <div class="popcorn-image-block--mini"></div>
+                </div>
+            </div>
+
+            <div class="options-block">
+                <h3 class="options-block_heading">
+                    Бесплатная и безлимитная подписка IVI <span class="options-block_heading_asterisk">навсегда</span>
+                    &mdash; <br> в вашем тарифе!
+                </h3>
+
+                <div class="options-block_cards">
+                    <div class="options-block_card" data-card="card-1">
+                        <div class="options-block_card-wrapper">
+                            <div class="options-block_card_head">
+                                <img class="options-block_card_head_image" src="./assets/images/card-img-1.jpg"
+                                     alt="option-img">
+                                <div class="options-block_card_head_data">
+                                    <h5 class="options-block_card_head_data_heading">Бирге для интернета + IVI</h5>
+                                    <p class="options-block_card_head_data_text">
+                                <span class="options-block_card_head_data_text-price">
+                                    390 <span class="options-block_card_head_data_text-currency">c</span>
+                                </span> / неделя
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="options-block_card-body">
+                                <h6 class="options-block_card-body_heading">Активируйте <span
+                                        class="options-block_card-body_text--deletable">подписку</span> IVI в Мой Beeline
+                                </h6>
+                                <ul class="options-block_card-body_list">
+                                    <li class="options-block_card-body_list-item"><span>30 Гб</span> интернета</li>
+                                    <li class="options-block_card-body_list-item"><span>10 Гб</span> на
+                                        <a class="options-block_card-link-ivi" href="#"></a>
+                                        <span class="options-block_card-link-ivi--mobile">IVI <a href="#"></a></span>
+                                    </li>
+                                    <li class="options-block_card-body_list-item"><span>10 мин</span> на звонки вне сети
+                                    </li>
+                                    <li class="options-block_card-body_list-item"><span>2 Гб</span> на
+                                        <div class="options-block_card-social-links">
+                                            <a class="options-block_card-social-link options-block_card-social-link--insta"
+                                               href="#"></a>
+                                            <a class="options-block_card-social-link options-block_card-social-link--whats"
+                                               href="#"></a>
+                                            <a class="options-block_card-social-link options-block_card-social-link--tlgrm"
+                                               href="#"></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="options-block_card_buttons">
+                            <button class="options-block_card_button options-block_card_button--primary">Подключить</button>
+                            <button class="options-block_card_button options-block_card_button--secondary">Получить
+                                SIM-карту
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="options-block_card" data-card="card-2">
+                        <div class="options-block_card-wrapper">
+                            <div class="options-block_card_head">
+                                <img class="options-block_card_head_image" src="./assets/images/card-img-2.jpg"
+                                     alt="option-img">
+                                <div class="options-block_card_head_data">
+                                    <h5 class="options-block_card_head_data_heading">Бирге для интернета <br> PRO + IVI</h5>
+                                    <p class="options-block_card_head_data_text">
+                                <span class="options-block_card_head_data_text-price">
+                                    490 <span class="options-block_card_head_data_text-currency">c</span>
+                                </span> / неделя
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="options-block_card-body">
+                                <h6 class="options-block_card-body_heading">Активируйте <span
+                                        class="options-block_card-body_text--deletable">подписку</span> IVI в Мой Beeline
+                                </h6>
+                                <ul class="options-block_card-body_list">
+                                    <li class="options-block_card-body_list-item"><span>40 Гб</span> интернета</li>
+                                    <li class="options-block_card-body_list-item"><span>15 Гб</span> на
+                                        <a class="options-block_card-link-ivi" href="#"></a>
+                                        <span class="options-block_card-link-ivi--mobile">IVI <a href="#"></a></span>
+                                    </li>
+                                    <li class="options-block_card-body_list-item"><span>40 мин</span> на звонки вне сети
+                                    </li>
+                                    <li class="options-block_card-body_list-item"><span>2 Гб</span> на
+                                        <div class="options-block_card-social-links">
+                                            <a class="options-block_card-social-link options-block_card-social-link--insta"
+                                               href="#"></a>
+                                            <a class="options-block_card-social-link options-block_card-social-link--whats"
+                                               href="#"></a>
+                                            <a class="options-block_card-social-link options-block_card-social-link--tlgrm"
+                                               href="#"></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="options-block_card_buttons">
+                            <button class="options-block_card_button options-block_card_button--primary">Подключить</button>
+                            <button class="options-block_card_button options-block_card_button--secondary">Получить
+                                SIM-карту
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="options-block_card" data-card="card-3">
+                        <div class="options-block_card-wrapper">
+                            <div class="options-block_card_head">
+                                <img class="options-block_card_head_image" src="./assets/images/card-img-3.jpg"
+                                     alt="option-img">
+                                <div class="options-block_card_head_data">
+                                    <h5 class="options-block_card_head_data_heading">Подписка ivi еще на 30 дней
+                                        <span class="options-block_card-explanation">
+                                        бесплатно
+                                        <a class="options-block_card-explanation-link" href="#">?</a>
+                                    </span>
+                                    </h5>
+                                    <p class="options-block_card_head_data_text">
+                                <span class="options-block_card_head_data_text-price">
+                                    200 <span class="options-block_card_head_data_text-currency">c</span>
+                                </span> / 30 дней
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="options-block_card-body">
+                                <h6 class="options-block_card-body_heading">Активируйте <span
+                                        class="options-block_card-body_text--deletable">подписку</span> IVI в Мой Beeline
+                                </h6>
+                                <ul class="options-block_card-body_list">
+                                    <li class="options-block_card-body_list-item">
+                                        еще <span>30 дней</span> бесплатной подписки онлайн-кинотеатра
+                                        <a class="options-block_card-link-ivi" href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="options-block_card_buttons">
+                            <button class="options-block_card_button options-block_card_button--primary">Подключить</button>
+                            <button class="options-block_card_button options-block_card_button--secondary">Получить
+                                SIM-карту
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="options-block_cards-select-buttons">
+                    <button class="options-block_cards-select-button active" data-target="card-1"></button>
+                    <button class="options-block_cards-select-button" data-target="card-2"></button>
+                    <button class="options-block_cards-select-button" data-target="card-3"></button>
+                </div>
+            </div>
+
+            <div class="app-block">
+                <div class="app-block_blur"></div>
+                <div class="app-block_content">
+                    <div class="app-block_content-phone">
+
+                        <div class="app-block_content-phone-imageBlock">
+                            <div class="app-block_content-phone-image"></div>
+                        </div>
+
+                        <div class="app-block_content-phone-downloadBlock">
+                            <h4 class="app-block_content-phone-heading">
+                                Скачивайте приложение <span
+                                    class="app-block_content-phone-heading--expandable">Мой Beeline</span>
+                            </h4>
+
+                            <div class="app-block_content-phone-body">
+                                <p class="app-block_content-phone-text">и получайте неограниченный доступ к миру кино и
+                                    сериалов!</p>
+                                <div class="app-block_content-phone-image app-block_content-phone-image--small"></div>
+                                <div class="app-block_download-phone-buttons">
+                                    <a class="app-block_download-phone-button app-block_download-phone-button--google"
+                                       href="#">
+                                        Доступно в <br>
+                                        <span class="app-block_download-phone-button-storeName">Google Play</span>
+                                    </a>
+                                    <a class="app-block_download-phone-button app-block_download-phone-button--apple"
+                                       href="#">
+                                        Загрузите в <br>
+                                        <span class="app-block_download-phone-button-storeName">App Store</span>
+                                    </a>
+                                </div>
+
+                                <div class="app-block_content-phone-line"></div>
+
+                                <div class="app-block_content-phone-clarification">
+                                    Чтобы воспользоваться IVI, вам необходимо
+                                    <a class="app-block_content-phone-clarification-link" href="#">
+                                        скачать приложение Мой Beeline. Затем нажать</a>
+                                    на кнопку IVI и безграничный мир кино и сериалов в ваших руках!
+                                </div>
+
+                                <a class="app-block_download-phone-button-connect" href="#">Как подключить IVI навсегда?</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <ul class="app-block_content-list">
+                        <li class="app-block_content-list-item app-block_content-list-item--gifts">
+                            <p class="app-block_content-list-item-text">
+                                Всегда множество <br>
+                                подарков и акций
+                            </p>
+                        </li>
+                        <li class="app-block_content-list-item app-block_content-list-item--rewards">
+                            <p class="app-block_content-list-item-text">
+                                Награды <br>
+                                за действия
+                            </p>
+
+                        </li>
+                        <li class="app-block_content-list-item app-block_content-list-item--sale">
+                            <p class="app-block_content-list-item-text">
+                                Скидочные и специальные <br>
+                                предложения только для вас
+                            </p>
+
+                        </li>
+                        <li class="app-block_content-list-item app-block_content-list-item--simple">
+                            <p class="app-block_content-list-item-text">
+                                Простое и удобное управление <br>
+                                своим номером и номерами близких
+                            </p>
+
+                        </li>
+                        <li class="app-block_content-list-item app-block_content-list-item--help">
+                            <p class="app-block_content-list-item-text">
+                                И связь с компанией Beeline <br>
+                                в любое время
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="app-block_content-clarification">
+                        <p>
+                            Просмотр кино и сериалов доступен на безлимитной основе. Интернет трафик тарифицируется
+                            согласно условий тарифного плана Бирге для интернета и Бирге для интрнета Pro. Под словом
+                            «навсегда» подразумевается бесплатный и безлимитный доступ <br> к
+                            <span class="app-block_content-clarification-text-desktop">подписке онлайн-кинотеатра</span>
+                            <span class="app-block_content-clarification-text-mobile">онлайн- кинотеатру</span>
+                            IVI при выполнении всех условий тарифных планов
+                            <a href="" class="app-block_content-clarification-link">Бирге для Интернета</a> и
+                            <a href="" class="app-block_content-clarification-link">Бирге для Интернета PRO</a>
+                            в период существования указанных тарифов. <a href=""
+                                                                         class="app-block_content-clarification-link">
+                            Пользовательское соглашение Сервиса IVI.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer_rights">
+                    © 2021, Beeline. Все права защищены
+                </div>
+                <div class="footer_contacts">
+                    <div class="footer-contact footer_contacts-phone">+996 (775) 58 0611</div>
+                    <div class="footer-contact footer_contacts-help">Справочная *611</div>
+                    <div class="footer-contact footer_contacts-email">answer@beeline.kg</div>
+                </div>
+                <div class="footer_social">
+                    <a href="#" class="footer_social-link footer_social-link--insta"></a>
+                    <a href="#" class="footer_social-link footer_social-link--fb"></a>
+                    <a href="#" class="footer_social-link footer_social-link--youtube"></a>
+                    <a href="#" class="footer_social-link footer_social-link--vk"></a>
+                    <a href="#" class="footer_social-link footer_social-link--twitter"></a>
+                    <a href="#" class="footer_social-link footer_social-link--whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

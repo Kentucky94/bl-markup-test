@@ -1,0 +1,164 @@
+.mobile-menu {
+    box-sizing: border-box;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    margin: 0 -16px;
+    overflow: hidden;
+    transition: height 1s linear;
+}
+
+.mobile-menu.open {
+    height: 640px;
+}
+
+.mobile-menu_top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu_body {
+    padding: 0 16px;
+    flex-grow: 1;
+}
+
+.mobile-menu_button-close, .mobile-menu_avatar {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.mobile-menu_button-close {
+    background-image: url('../assets/icons/x.png');
+    width: 60px;
+    height: 60px;
+}
+
+.mobile-menu_avatar {
+    background-image: url('../assets/icons/user.jpg');
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 9px 16px;
+}
+
+.mobile-menu_language-list {
+    list-style: none;
+}
+
+.mobile-menu_language-list-item {
+    display: inline-block;
+}
+
+.mobile-menu_language-list-item button {
+    border: none;
+    background: transparent;
+    color: #9D919E;
+}
+
+.mobile-menu_language-list-item.active button {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.mobile-menu_language-list-item::after {
+    content: "/";
+    display: inline-block;
+    color: #9D919E;
+}
+
+.mobile-menu_language-list-item:last-child::after {
+    display: none;
+}
+
+.mobile-menu_client-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.mobile-menu_client-list-item {
+    width: 50%;
+}
+
+.mobile-menu_client-list-item button {
+    background: transparent;
+    border: none;
+    color: #9D919E;
+    width: 100%;
+    height: 60px;
+    line-height: 68px;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Fira Sans';
+}
+
+.mobile-menu_client-list-item.active button {
+    color: white;
+}
+
+.mobile-menu_client-list-item button::after {
+    content: "";
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    bottom: -4px;
+    left: 0;
+}
+
+.mobile-menu_client-list-item.active button::after {
+    background: linear-gradient(51.04deg, #FF9900 1.52%, #FFCD00 97.06%);
+}
+
+.mobile-menu_lists {
+    flex-grow: 1;
+}
+
+.mobile-menu_list {
+    list-style: none;
+    margin-top: 14px;
+}
+
+.mobile-menu_list-item {
+    display: block;
+    line-height: 44px;
+    font-size: 16px;
+}
+
+.mobile-menu_list-item a {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.mobile-menu_list-item--droppable a::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    background: url("../assets/icons/arrow-down.png") no-repeat center center;
+    position: absolute;
+    top: 40%;
+    right: 7px;
+}
+
+.mobile-menu_bottom {
+    padding: 17px 16px;
+}
+
+.mobile-menu_bottom a {
+    font-size: 16px;
+    color: #0094FF;
+}

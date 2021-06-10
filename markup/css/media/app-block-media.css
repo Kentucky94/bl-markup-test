@@ -1,0 +1,229 @@
+@media screen and (max-width: 900px) {
+    .app-block_content-list-item {
+        width: 50%;
+        padding: 0;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 16px 0;
+    }
+
+    .app-block_content-list-item-text {
+        width: 75%;
+        vertical-align: top;
+    }
+
+    .app-block_content-list-item:nth-child(4) {
+        order: 5;
+    }
+
+    .app-block_content-list-item:last-child {
+        order: 4;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .app-block {
+        overflow: hidden;
+        margin: 0 -16px;
+        padding: 0 16px;
+    }
+
+    .app-block_content-phone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-block_content-phone-imageBlock {
+        width: 100%;
+        text-align: center;
+    }
+
+    .app-block_content-phone-image::after {
+        display: none;
+    }
+
+    .app-block_content-phone-downloadBlock {
+        width: 100%;
+    }
+
+    .app-block_content-phone-heading {
+        text-align: center;
+    }
+
+    .app-block_content-phone-body {
+        width: 100%;
+    }
+
+    .app-block_content-phone-text {
+        text-align: center;
+    }
+
+    .app-block_download-phone-buttons {
+        justify-content: center;
+    }
+
+    .app-block_download-phone-button--apple::after {
+        display: none;
+    }
+
+    .app-block_download-phone-button-connect {
+        margin: 20px auto;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .app-block_download-phone-button-connect {
+        width: 100%;
+        font-size: 16px;
+        line-height: 56px;
+        height: 56px;
+        padding: 0;
+        border-radius: 8px;
+        margin: 23px auto 0;
+    }
+
+    .app-block_download-phone-button-connect::after {
+        transform: scale(0.7);
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .app-block_content-list {
+        flex-direction: column;
+        margin: 21px 0 0 0;
+        height: auto;
+    }
+
+    .app-block_content-list-item {
+        width: 100%;
+    }
+
+    .app-block_blur {
+        top: 150px;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .app-block {
+        padding-top: 0;
+    }
+    .app-block_content-phone {
+        flex-direction: column;
+    }
+
+    .app-block_content-phone-imageBlock {
+        display: none;
+    }
+
+
+    .app-block_content-phone-downloadBlock {
+        width: 100%;
+        align-items: center;
+    }
+
+    .app-block_content-phone-heading {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    .app-block_content-phone-heading--expandable {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .app-block_content-phone-body {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .app-block_content-phone-text {
+        font-size: 16px;
+        line-height: 23px;
+        padding-right: 40px;
+        text-align: left;
+    }
+
+    .app-block_content-phone-image--small {
+        display: block;
+        margin: 9px 0 0 -1px;
+    }
+
+    .app-block_download-phone-buttons {
+        margin-top: 8px;
+        justify-content: space-around;
+        padding: 0 11px;
+    }
+
+    .app-block_download-phone-button {
+        margin: 0;
+        height: 44px;
+        width: 137px;
+        font-size: 10px;
+        padding: 7px 0 0 46px;
+    }
+
+    .app-block_download-phone-button--google {
+        background-image: url("../../assets/icons/google-play-1.png");
+        background-position: 13px 11px;
+    }
+
+    .app-block_download-phone-button--apple {
+        background-image: url("../../assets/icons/app-store-1.png");
+        background-position: 13px 12px;
+    }
+
+    .app-block_download-phone-button-storeName {
+        font-size: 14px;
+    }
+
+    .app-block_content-phone-line {
+        margin: 37px 0 21px;
+        max-width: 100%;
+    }
+
+    .app-block_content-phone-clarification {
+        display: block;
+    }
+
+    .app-block_content-clarification {
+        padding-left: 14px;
+        margin: 44px 0 0 0;
+    }
+
+    .app-block_content-clarification br{
+        display: none;
+    }
+
+    .app-block_content-clarification-text-desktop {
+        display: none;
+    }
+
+    .app-block_content-clarification-text-mobile {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .app-block_download-phone-buttons {
+        flex-direction: column;
+    }
+
+    .app-block_download-phone-button {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+

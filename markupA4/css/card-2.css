@@ -1,0 +1,509 @@
+.card-2 .card-col-1 {
+    padding: 25px 15px 20px 25px;
+}
+
+.card-2 .card-col-1 {
+    background: white;
+    width: 33.7%;
+    counter-reset: numeration list-numeration;
+    position: relative;
+}
+
+.card-2 .card-col-2 {
+    width: 32%;
+}
+
+.card-2 .card-col-3 {
+    width: 34.3%;
+}
+
+.card-2 .card-col-1 {
+    color: #39393B;
+}
+
+.card-2 .card-col-1 .card-heading {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 17px;
+}
+
+.card-2 .card-col-1 .underline {
+    position: relative;
+}
+
+.card-2 .card-col-1 .underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.card-2 .card-col-1 .underline--yellow::before {
+    background: #FFCD00;
+    left: 0;
+    bottom: 2px;
+    height: 4px;
+}
+
+.card-2 .card-col-1 .numbered {
+    position: relative;
+}
+
+.card-2 .card-col-1 .numbered::after {
+    counter-increment: numeration;
+    content: counter(numeration);
+    font-size: 6px;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+}
+
+.card-2 .card-col-1 .underline--gradient::before {
+    background: linear-gradient(90deg, #FFCD00 0%, rgba(255, 205, 0, 0) 100%);
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+}
+
+.card-2 .card-col-1 .list {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    flex-grow: 1;
+    margin: 0 -20px 0 -25px;
+    padding: 0 20px 0 25px;
+}
+
+.card-2 .card-col-1 .list-item {
+    margin-bottom: 7px;
+    position: relative;
+}
+
+.card-2 .card-col-1 .list-item::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    background: url("../assets/icons/check-circle.png") no-repeat center center;
+    left: -16px;
+    top: 3px;
+}
+
+.card-2 .card-col-1 .image-block {
+    position: absolute;
+    width: 308px;
+    height: 283px;
+    background: url("../assets/images/bg.png") no-repeat center center;
+    bottom: 0;
+    left: 4px;
+    z-index: -1;
+}
+
+.card-2 .card-col-1 .image-block--circles {
+    position: absolute;
+    width: 302px;
+    height: 216px;
+    background: url("../assets/images/circles.png") no-repeat center center;
+    bottom: 68px;
+    left: 0;
+    z-index: -1;
+}
+
+.card-2 .card-col-1 .bottom-list {
+    font-size: 8px;
+    line-height: 12px;
+}
+
+.card-2 .card-col-1 .bottom-list-item {
+    margin-top: 12px;
+    position: relative;
+}
+
+.card-2 .card-col-1 .bottom-list-item::before {
+    counter-increment: list-numeration;
+    content: counter(list-numeration);
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    font-size: 6px;
+    left: -11px;
+    top: 0
+}
+
+.card-2 .card-col-2 {
+    padding: 23px 6px 20px 33px;
+}
+
+.card-2 .card-col-2 .card-top{
+    margin-bottom: 19px;
+}
+
+.card-2 .card-col-2 .card-top .card-top-heading{
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.card-2 .card-col-2 .card-top .red{
+    color: #FF2360;
+    position: relative;
+}
+
+.card-2 .card-col-2 .card-top .red::after{
+    content: "\002A";
+    position: absolute;
+    font-size: 11px;
+    top: -4px;
+    right: -5px;
+}
+
+.card-2 .card-col-2 .card-top .card-top-text {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.card-2 .card-col-2 .options-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.card-2 .card-col-2 .options-card {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.card-2 .card-col-2 .options-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-2 .card-col-2 .options-card-head {
+    border-bottom: 1px solid #3C2F78;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card-2 .card-col-2 .options-card-head-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.card-2 .card-col-2 .options-card-head-data {
+    display: inline-block;
+    vertical-align: top;
+    width: 73%;
+}
+
+.card-2 .card-col-2 .options-card-head-data-heading {
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.card-2 .card-col-2 .options-card-head-data-text {
+    font-size: 11px;
+    line-height: 17px;
+    word-spacing: 2px;
+    color: #E8E8E8;
+    font-weight: normal;
+}
+
+.card-2 .card-col-2 .options-card-head-data-text-price {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.card-2 .card-col-2 .options-card-head-data-currency {
+    text-decoration: underline;
+}
+
+.card-2 .card-col-2 .options-card-body {
+    margin-top: 28px;
+    flex-grow: 1;
+}
+
+.card-2 .card-col-2 .options-card-body-list {
+    list-style: none;
+}
+
+.card-2 .card-col-2 .options-card-body-list-item {
+    display: block;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.card-2 .card-col-2 .options-card-body-list-item span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.card-2 .card-col-2 .options-card-social-links {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.card-2 .card-col-2 .options-card-social-link {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.card-2 .card-col-2 .options-card-link-ivi {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin-left: 4px;
+    vertical-align: text-top;
+    background: url("../assets/images/ivi.png") no-repeat 2px -1px;
+}
+
+.card-2 .card-col-2 .options-card-social-link--insta {
+    background: url('../assets/icons/social-icons/instagram.png') no-repeat 50% 50%;
+}
+
+.card-2 .card-col-2 .options-card-social-link--whats {
+    background: url('../assets/icons/social-icons/whatsapp.png') no-repeat 50% 50%;
+}
+
+.card-2 .card-col-2 .options-card-social-link--tlgrm {
+    background: url('../assets/icons/social-icons/telegram.png') no-repeat 50% 50%;
+}
+
+.card-2 .card-col-2 .bottom-text {
+    font-size: 6px;
+    line-height: 10px;
+}
+
+.card-2 .card-col-3 {
+    padding: 23px 10px 20px 32px;
+    align-items: center;
+    position: relative;
+}
+
+.card-2 .card-col-3 .blur-1 {
+    width: 163px;
+    height: 322px;
+    border-radius: 78px;
+    background: linear-gradient(180deg, #6C60A9 0%, #F8104D 100%);
+    filter: blur(100px);
+    transform: matrix(0.87, 0.5, -0.5, 0.87, 0, 0);
+    position: absolute;
+    right: 70px;
+    top: -20px;
+    z-index: -1;
+}
+
+.card-2 .card-col-3 .blur-2 {
+    width: 201px;
+    height: 229px;
+    background: linear-gradient(340.86deg, #F8104D -0.41%, rgba(26, 20, 59, 0) 56.76%);
+    transform: skew(-10deg, -10deg);
+    position: absolute;
+    right: -25px;
+    top: 37px;
+    z-index: -2;
+}
+
+.card-2 .card-col-3 .card-heading {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.card-2 .card-col-3 .phone {
+    margin: 0 -10px 0 -32px;
+    flex-grow: 1;
+}
+
+.card-2 .card-col-3 .phone-col{
+    display: inline-block;
+    font-size: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.card-2 .card-col-3 .phone-col--left {
+    width: 45%;
+    height: 248px;
+    background: url("../assets/images/iPhone X.png") no-repeat 74% 30%;
+    position: relative;
+}
+
+.card-2 .card-col-3 .phone-col--left::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.card-2--ru .card-col-3 .phone-col--left::after{
+    background-image: url("../assets/images/phone-line--ru.png");
+    right: -3px;
+    bottom: 40px;
+    width: 33px;
+    height: 83px;
+}
+
+.card-2--kg .card-col-3 .phone-col--left::after{
+    background-image: url("../assets/images/phone-line--kg.png");
+    right: -2px;
+    bottom: 39px;
+    width: 35px;
+    height: 124px;
+}
+
+.card-2 .card-col-3 .phone-col--right {
+    width: 52%;
+    padding: 9px 14px 10px 1px;
+}
+
+.card-2 .card-col-3 .phone-col-list {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.card-2 .card-col-3 .phone-col-list-item {
+    margin-bottom: 9px;
+}
+
+.card-2 .card-col-3 .phone-col-list-item .underline--silver {
+    position: relative;
+}
+
+.card-2 .card-col-3 .phone-col-list-item .underline--silver::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(60, 47, 120, 0) 100%);
+}
+
+.card-2 .card-col-3 .phone-col-list-item .outline--bold {
+    font-weight: bold;
+}
+
+.card-2 .card-col-3 .download-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    width: 81%;
+}
+
+.card-2 .card-col-3 .download-heading {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-2 .card-col-3 .download-block img {
+    margin-bottom: 14px;
+}
+
+.card-2 .card-col-3 .links {
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 0 10px;
+    width: 100%;
+}
+
+.card-2 .card-col-3 .link {
+    height: 29px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.card-2 .card-col-3 .link-social {
+    padding-top: 4px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    width: 90px;
+    background-position: 8px 50%;
+    font-size: 7px;
+    line-height: 8px;
+}
+.card-2 .card-col-3 .link-social .store-name {
+    font-size: 9px;
+    line-height: 12px;
+    font-weight: 500;
+}
+
+.card-2 .card-col-3 .link-social--google {
+    background-image: url("../assets/icons/google-play.png");
+}
+
+.card-2 .card-col-3 .link-social--apple {
+    background-image: url("../assets/icons/app-store.png");
+}
+
+.card-2--kg .card-col-1 {
+    padding-top: 23px;
+    padding-bottom: 16px;
+}
+
+.card-2--kg .card-col-1 .card-heading {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.card-2--kg .card-col-1 .list {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.card-2--kg .card-col-1 .bottom-list {
+    width: 44%;
+}
+
+.card-2--kg .card-col-2 .card-top .card-top-heading {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 11px;
+}
+
+.card-2--kg .card-col-2 .options-card-head-data-text {
+    word-spacing: 1px;
+}
+
+.card-2--kg .card-col-2 {
+
+}
+
+.card-2--kg .card-col-2 {
+
+}
+
+.card-2--kg .card-col-3 .phone-col--right {
+    padding-left: 4px;
+}
+
+.card-2--kg .card-col-3 .phone-col-list-item {
+    margin-bottom: 18px;
+}
+
+

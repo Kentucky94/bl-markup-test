@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    background: #1A143B;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1184px;
+    padding: 0 20px;
+}
+
+.gradient-wrapper {
+    background: linear-gradient(143.04deg, #FF0F52 -6.84%, rgba(26, 20, 59, 0) 15%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
